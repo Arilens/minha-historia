@@ -1,0 +1,171 @@
+/* estilo geral da pagina */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: color #f0f4f8;(64, 103, 231); /* cor de fundo suave */
+    color: #333; /* cor do texto */
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* estilo da imagem do perfil */
+#minha-foto {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* faz a imagem ficar circular */
+    border: 5px solid #fff; /* borda branca para destacar a imagem */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* sombra suave para a imagem */
+    margin-top: 20px;
+}
+
+/* container das informacoes principais */
+#informacoes-principais{
+display:flex ; 
+justify-content: center; 
+align-items: center;
+margin-top: 30px;  
+}
+
+/* estilo para o nome */
+#meu-nome{
+   margin-left: 20px; 
+   color: #0d3b66; /* cor mais intensa *q
+   font-size: 2.5rem; /* tamanho maior para nome */
+   font-weight: bold;
+   letter-spacing: 1px; /8 espacamento entre as letras */
+   text-transform: capitalize; /* capitaliza as primeiras letras do nome */
+}
+
+/* estilo para a secao da historia */
+#minha-historia{
+   margin-top: 50px;
+   max-width: 800px; 
+   margin-left: auto;
+   margin-right: auto;
+   padding: 20px;
+   background-color: #fff; /* fundo branco para destacar o texto */
+   border-radius: 8px; /* bordas arredondadas */
+   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* sombra suave */
+   font-size: 1.1rem;
+   line-height: 1.8;
+}
+
+/* descripcao da historia */
+#minha-historia-descripcao{
+    text-align: justify;
+    color: #555; /* cor do texto mais suave */
+    margin-bottom: 20px;
+}
+
+/* estilo da secao de cidade */
+#minha-cidade{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#foto-minha-cidade{
+    height: 100px; /* ajuste o tamanho conforme necesario */
+    width: auto; /* mantem a proporcao da imagem */
+    border-radius: 8px; /* borda arredondada */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /8 sombra suave nas imagens */
+}
+
+/* estilo da imagem do contato */
+#contato-imagen {
+    height: 30px;
+    margin-left: 10px;
+}
+
+/* texto de contato */
+#contato-texto {
+    font-size: 1.2rem;
+    color: #3a7ca5; /* cor mais intensa para o texto */
+}
+
+/* estilo do link de contato */
+#contato-link {
+  text-decoration: none;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: all 0.3s ease-in-out;
+}
+
+/* efeito ao passar o mouse no link de contato */
+#contato-link:hover {
+    background-color: #0d3b66;
+    color: white;
+}
+
+/* estilo da galeria */
+#galeria {
+    display: none; /* inicialmente escondida */
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* grid responsiva */
+    gap: 15px;
+    justify-items: center;
+}
+.imagem {
+    width: 100%; 
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* sombra nas imagens */
+    transition: transform 0.3s ease; /* transicao suave para o efeito de houver */
+}
+
+.imagem:hover {
+    transform: scale(1.05); /*aumenta a imagem suavemente*/
+}
+
+/* responsividade: ajusta o layout em telas menores */
+@media (max-width: 768px) {
+    #informacoes-principais {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #meu-nome {
+        font-size: 2rem; /* ajuste o tamanho do nome*/
+    }
+
+    #minha-historia {
+        padding: 15px;
+    }
+
+    .imagem {
+        width: 100%; /* imagens ocupam 100% do espaco disponivel */
+    }
+}
+
+.botao-personalizado {
+    background-color: #7eadea;
+    color: #fff; 
+    padding: 12px 28px; 
+    font-size: 1.1rem; 
+    font-weight: bold;
+    border-radius: 8px; 
+    border: none; 
+    cursor: pointer; 
+    transition:all 0.3s ease; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Efeito ao passar o mouse no botao */
+.botao-personalizado:hover {
+    background-color: #0ad3da; 
+    transform: scale(1.05); /* aumenta o botao suavemente */
+}
+
+/* Efeito ao clicar no botão */
+.botao-personalizado:active {
+    background-color: #cde81b;
+    transform: scale(0.98);/*diminui levemente o botao */
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>minha historia</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- favicon (icone na aba do navegador) -->
+     <link rel="icon" href="icone haiti.jpg" type="image/x-icon">
+
+</head>
+<body>
+
+    <div id="informacoes-principais">
+        <img src="arilens.jpg" id="minha-foto" />
+        <h1 id="meu-nome">Franchesco Arilens Aristor</h1>
+       
+    </div>
+
+    <div id="minha-historia">
+        <h2>Minha Historia</h2>
+        <p id="minha-historia-descripcao">Eu nasci no haiti 8/10/1994,em uma cidade charmosa chamada fond-des-negres. EU tenho 30anos morro com minha mulher e meu filho de 4anos, desde pequeno, sempre fui apaixonado por novas culturas e pela diversidade do mundo. Meu interesse por aprender diferentes linguas e vivencia novas experiencias me levou a viajar para muitos lugares,ate que, ha 6 anos, decidi morar no brasil. Aqui, encontrei uma mistura vibrante de cores,sons sabores que me cativaram profundamente, encontrei o verdadero eu uma nova vida como homem trans comecei meu tratamento, encontrei felicidades, paixao, amigos. <br>
+           <p> Minha historia e marcada por essa busca constante por novas experiencas. Estudei engles no colegio e informatica, 1ano de medicina na faculdade no meu pais, fundamentais de logistica, fundamentais de seguranca de trabalho aqui no brasil, atras da minha vocacao, ao longo do tempo, fui criando uma rede de amigos e conexoes que me ajudaram a crescer tanto pessoalmente quanto profissionalmente. Sempre tive uma paixao por tecnologia curiosidade a fazer site a saber como funcionna jogo e pagina web ate eu consigo participar na missao da 42saopaulo uma escola francesa de programacao en brasil ai eu mim encontrei mim encaixei certinho, o que me motivo a seguir uma carreira na area de desenvolvimento web e inteligencia artificial. Trabalha com criatividade e imaginacao sempre foi um grande motor na minha vida </p><br>
+             Entre meus hobbies, destaco a lectura, musicas e passeio typo trillas, playa, que me permite capturar momentos especiais e tambem praticar a observacao do mundo ao meu redor. Gosto muito de ler, especialmente sobre historia e filosofia, o que me ajuda a refletir sobre a vida e meu papel nela. <br>
+             <p> O que mais gosto no brasil e a energia positiva das pessoas. A alegria, a receptividade e o espirito de solidariedade sao algo unicos. O brasil e um pais que vive com intensidade, seja nas festas, no carnaval, ou ate nas interacoes cotidianas. A gastronomia tambem me encanta-a comida brasileira e maravilhosa, com tantos sabores e influencias de diferentes regioes. </p><br>
+             Para o futuro, meu maior objectivo e continuar aprendendo e compartilhando o que sei, alem de poder contribuir de alguma forma para a sociedade, seja atraves do meu trabalho ou de iniciativas que ajudem a melhorar a vida das pessoas ao meu redor. sonho em viver em harmonia com a natureza, viajar mais e, quem sabe, abrir um projeto que ajude a conectar diferentes culturas e historias. <br>
+             <p> Esses sao alguns dos pontos que formam a minha trajetoria e que me motivam todos os dias a seguir em frente com otimismo e determinacao.</p></p>
+    </div>
+
+    <div>
+        <h2>Onde eu Nasci</h2>
+        <div id="minha-cidade">
+             <img src="./haiti.JPG" id="foto-minha-cidade">
+             <div>
+                <p>Nome:haiti</p>
+                <p>comida tipica:fritay</p>
+                <p>diversao:playa, carnaval</p>
+             </div>
+        </div>
+    </div>
+
+    <button class="botao-personalizado" onclick="exibirGaleria()">Mais fotos da minha cidade</button>
+
+    <div id="galeria">
+        <img class="imagem" src="haiti 1.webp" alt="Imagem 1">
+        <img class="imagem" src="haiti 2.JPG" alt="Imagem 2">
+        <img class="imagem" src="haiti 3.webp" alt="Imagem 3">
+        <img class="imagem" src="haiti 4.jpg" alt="imagem 4">
+        <img class="imagem" src="haiti 5.jpg" alt="imagem 5">
+        <img class="imagem" src="haiti 6.jpg" alt="imagem 6">
+        <img class="imagem" src="haiti 7.jpg" alt="imagem 7">
+        <img class="imagem" src="haiti 8.jpg" alt="imagem 8">
+    </div>
+
+    <script>
+        function exibirGaleria() {
+            var galeria = document.getElementById("galeria");
+            if (galeria.style.display === "none") {
+                galeria.style.display = "block"; // Exibe as imagens
+            } else {
+                galeria.style.display = "none"; // Oculta as imagens se clicar de novo
+            }
+        }
+    </script>
+    
+    <div>
+        <h2>contato</h2>
+        <a href="https://wa.me/message/F4G6DUPXF3UDM1" target="_blank" id="contato-link">
+           <span id="contato-texto">entre em contato comigo</span>
+            <img src="./whatssap.jpg" id="contato-imagen">
+        </a>
+    </div>
+</body>
+</html>
